@@ -1,0 +1,220 @@
+/*===== Defining CSS variables =====*/
+:root {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+
+    /*===== Colors Variables =====*/
+    --wht-clr: #ffffff;
+    --blk-clr: #000000;
+    --primary-clr: #ffb52b;
+    /* Primary color (Yellow) */
+    --secondary-clr: #00aeff;
+    /* Secondary color (Blue) */
+
+    /*===== Background Colors Variables =====*/
+    --primary-bg-clr: #ffb52b;
+    --secondary-bg-clr: #f5fc9e;
+
+    /*===== Border Variables =====*/
+    --rounded-border: 100%;
+    --primary-border-rounded: 5rem;
+    --secondary-border-rounded: 2.5rem;
+
+    /*===== Font Family Variables =====*/
+    --primary-fonts: "Montserrat", sans-serif;
+    --secondary-fonts: "Poppins", sans-serif;
+
+    /*===== Font Weight Variables =====*/
+    --font-weight-a: 100;
+    --font-weight-b: 200;
+    --font-weight-c: 300;
+    --font-weight-d: 400;
+    --font-weight-r: 500;
+    --font-weight-f: 600;
+    --font-weight-g: 700;
+    --font-weight-h: 800;
+}
+
+/*===== General Selector Styling =====*/
+* {
+    box-sizing: border-box;
+}
+
+/*===== Body Styling =====*/
+body {
+    font-family: var(--primary-fonts);
+    margin: 0;
+    padding: 0;
+}
+
+/*===== Header Styling =====*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-g);
+    font-family: var(--primary-fonts);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 6.2rem;
+    line-height: 7.2rem;
+}
+
+h2 {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+}
+
+h3 {
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+}
+
+h4 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+}
+
+h5 {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+/*===== Paragraph Styling =====*/
+p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-family: var(--secondary-fonts);
+    margin-bottom: 3rem;
+}
+
+span {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: var(--secondary-fonts);
+}
+
+/*===== List Styling =====*/
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*===== Link Styling =====*/
+a {
+    text-decoration: none;
+    color: var(--primary-clr);
+}
+
+/*===== Section Styling =====*/
+.padding-block {
+    padding-block: 10rem;
+}
+
+/*===== Container Styling =====*/
+.container {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*===== Image Styling =====*/
+img {
+    width: 100%;
+}
+
+/*===== Button Styling =====*/
+button {
+    margin-top: 2rem;
+}
+
+/*===== Primary Button Styles =====*/
+.btn-primary {
+    background-color: var(--primary-clr);
+    color: var(--blk-clr);
+    border: 0.2rem solid var(--primary-clr);
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-d);
+    border-radius: var(--primary-border-rounded);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: var(--secondary-clr);
+    color: var(--secondary-clr);
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    background-color: #1c6ea4;
+    border-color: #1c6ea4;
+    color: #fff;
+    transform: scale(1);
+}
+
+/*===== Secondary Button Styles =====*/
+.btn-secondary {
+    background-color: var(--wht-clr);
+    color: var(--primary-clr);
+    border: 0.2rem solid var(--primary-clr);
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-d);
+    border-radius: var(--secondary-border-rounded);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-clr);
+    color: var(--wht-clr);
+    border-color: var(--secondary-clr);
+    transform: scale(1.05);
+}
+
+.btn-secondary:active {
+    background-color: var(--secondary-clr);
+    color: var(--wht-clr);
+    border-color: var(--secondary-clr);
+    transform: scale(1);
+}
+
+/*===== Banner Section Strtas =====*/
+
+.section-first {
+    background-image: url("../images/pexels-kaju-style.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first-box {
+    text-align: center;
+    color: var(--wht-clr);
+    max-width: 72%;
+}
+
+/*===== Banner Section Ends =====*/
+.first-box h1 {
+    background: linear-gradient(to left, #00aeff, #ffb52b);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
